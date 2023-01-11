@@ -1,0 +1,8 @@
+Import matplotlib.pyplot as plt
+subjects = ['english','hindi','ip','accounts','bst','eco']
+marks = [75,68,85,79,87,78]
+plt.plot(subject,marks)
+plt.title('subject wise result analysis')
+plt.xlabel('subjects name')
+plt.ylabel('marks')
+plt.show()
