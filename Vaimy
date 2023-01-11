@@ -1,0 +1,14 @@
+create table students(studentid varchar(4),name varchar(26),marks float(4,2));
+insert into students values(1001,'Arpit',78.50);
+insert into students values(1002,'bharthi',87.50);
+insert into students values(1003,'chintu',92.60);
+insert into students values(1004,'charmi',88.90);
+insert into students values(1005,'divya',80.20);
+select * from students;
+delete from students where studentid=1005;
+select * from students;
+select* from students where marks>80;
+select min(marks), max(marks), sum(marks), avg(marks) from students;
+select ucase(name),lcase(name), left(name,3), right(name,3),instr(name,'a') from students;
+select now();
+select day('2023-01-11'), month('2023-01-11'), year('2023-01-11')
